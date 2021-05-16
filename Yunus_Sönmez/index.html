@@ -1,48 +1,73 @@
 <!DOCTYPE html>
 <head>
-   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     
 </head>
-<body>
-   
-   <!-- <nav class="navbar ">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Yunus Sönmez</a>
-            
+  <body>
+    <nav class="navbar" navbar-inverse>    
+      <div class="container-fluid"> 
+        <div class="navbar-header" id="navLink">
+         <a class="navbar-brand" href="index.html" id="brandRenk"><b>Yunus Sönmez</b></a> 
         </div>
-            <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Ana Sayfa</a></li>
-            <li><a href="#">Şehrim</a></li>
-            <li><a href="#">Özgeçmişim</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-          </ul> 
-        </div>
-    </nav>-->
-
-    <nav>      
-            <ul>
-            <li><a href="#home" class="navbar-brand">Yunus Sönmez</a></li>           
-            <li><a href="#home">Ana Sayfa</a></li>
-            <li><a href="#news">Özgeçmişim</a></li>
-            <li><a href="#contact">Şehrim</a></li>
-            <li style="float:right"><a class="active" href="#about">LOGIN</a></li>
-            </ul>
         
+        <ul class="nav navbar-nav" id="navLink">                                
+          <li><a href="Ozgecmisim.html"><b>Özgeçmişim</b></a></li>
+          <li><a href="Sehrim.html"><b>Şehrim</b></a></li> <!--buranın seçilidğini belirt-->
+          <li><a href="Mirasimiz.html"><b>Mirasımız</b></a></li>
+          <li ><a href="IlgiAlanlarim.html"><b>İlgi Alanlarım</b></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right" id="navLink">
+          <li><a href="Iletisim.html" ><b>İletişim</b></a></li>
+          <li ><a href="Login.html"  ><span class="glyphicon glyphicon-log-in"></span><b> LOGIN</b></a></li>            
+        </ul>                
+      </div>
     </nav>
-    
-    <section>
-            
-              
-            
-    </section>
-    
+   
+    <section class="conteiner-fluid">     
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="bilgiler">             
+              <img src="./resimler/zekeriyya.jpg" alt="Zekeriyya Yunus Sönmez" title="Zekeriyya Yunus Sönmez" id="hakkımdaImg">                          
+              <h3 style="text-align: center;">Hakkımda</h3>
+              <p>Adım Zekeriyya Yunus Sönmez. 2001 yılında Nevşehir Merkez'de doğdum. Aslen Kayseriliyim fakat Nevşehir'de yaşamaktayız.  </p>
+              <p>Nevşehir Anadolu Lisesi'nden mezun oldum ve Sakarya Üniversitesi Bilgisayar Mühendisliği Bölümü'nde okuyorum.
+                <br><br>
+                 Mesleğimde en iyi yerlere gelmek ve bir mühendis olarak insanları mutlu edecek ya da hayatlarını kolaylaştıracak projelerde
+                 yer almak istiyorum. Bu yönde gelişebilmek için ileride yurt dışında kendimi geliştirmek ve başka insanlarla da iletişim kurarak kendimi
+                 bu yönde eğitmek düşüncesindeyim. 
+              </p>
+
+            </div> 
+          </div>
+          
+          <div class="col-sm-8">          
+            <div class="bilgiler">
+              <h3 style="text-align: center; padding-top: 20px;">Hobilerim ve Uğraşlarım</h3>
+              <p>
+                 Kendimi geliştirmeyi seviyorum. Bu yüzden kendimi geliştirebileceğimi hissettiğim ve beni mutlu edecek hobiler ediniyorum ve hobilerim arasında en büyük yeri spor tutuyor.
+                 Kendimi geliştirmeyi sevdiğim için tek bir spor branşına bağlı kalmayıp sporun birçok dalıyla uğraşıyorum.
+                 Fakat basketbol ve futbol oynamak diğer branşlara göre beni daha mutlu ediyor. Basketbolda 3 yıl , futbolda 2 yıl okul takımında oynadım. Basketbol takımımızla il 2.'liğini kazandık.
+                 Uğraştığım başka bir spor branşı olan Oryantiring dalında ise il 3.'lüğü kazandım.
+              </p>
+              <img src="./resimler/basket.jpg" alt="basketbol" title="basketbol" id="basketbol">
+              <p>
+                Sporla bedenimi geliştirmemin yanında kendimi düşünce , bilgi birikimi gibi yönlerden de geliştirebilmek için kitap okuyorum ve araştırmalar yapıyorum.
+                İnsan ilişkileri ve psikolojilerini merak ettiğim için klasik romanlar ve psikoloji kitapları okumayı seviyorum.
+
+              </p>
+              <img src="./resimler/kitap.jpg" alt="kitap" title="kitap" id="kitap">
+
+            </div>
+          </div>            
+        </div>
+      </section> 
+
     <footer>
 
     </footer>
 
-</body>
+  </body>
+</html>

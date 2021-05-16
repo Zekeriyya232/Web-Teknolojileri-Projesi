@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <head>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <nav class="navbar" navbar-inverse>    
+    <div class="container-fluid"> 
+      <div class="navbar-header" id="navLink">
+       <a class="navbar-brand" href="index.html" id="brandRenk"><b>Yunus Sönmez</b></a> 
+      </div>
+     
+      <ul class="nav navbar-nav" id="navLink">                                
+        <li><a href="Ozgecmisim.html"><b>Özgeçmişim</b></a></li>
+        <li><a href="Sehrim.html"><b>Şehrim</b></a></li> <!--buranın seçilidğini belirt-->
+        <li><a href="Mirasimiz.html"><b>Mirasımız</b></a></li>
+        <li ><a href="IlgiAlanlarim.html"><b>İlgi Alanlarım</b></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right" id="navLink">
+        <li><a href="Iletisim.html" ><b>İletişim</b></a></li>
+        <li ><a href="Login.html"  ><span class="glyphicon glyphicon-log-in"></span><b> LOGIN</b></a></li>            
+      </ul>
+    </div>
+ </nav>
+ <section class="container-fluid" id="iletisim">
+  <div id="formAcıklama">
+    <p>
+      Benimle İletişime Geçin
+    </p>
+  </div>
+  
+  <form name="iletisim" action="#" method="GET" id="formIletisim">   
+      <table>                 
+         <tr><td> <input type="text" name="isim" autofocus required placeholder="İsim"></td></tr>         
+         <tr><td><input type="text" name="soyisim" id="soyisim" required placeholder="Soyisim" ></td></tr>        
+         <tr><td><input type="email" name="email"  autocomplete="email" required placeholder="Email"></td></tr>       
+         <tr><td><input type="tel" name="telefon"  autocomplete="tel" required placeholder="Tel"></td></tr> 
+         <tr><td><textarea type="text" name="ileti" id="iletiForm" rows="5"  maxlength="200" placeholder="Mesaj..."></textarea></td></tr>
+         <tr><td><input type="submit" id="submit"><input type="reset" id="reset" value="Temizle"></td></tr>
+      </table>
+    </form>
+ </section>
 </body>
 </html>
