@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+<html lang="tr">
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yunus Sönmez</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>    
+    <link rel="stylesheet" href="style.css">    
 </head>
 <body>
     <div class="container-fluid" id="login">
         <img src="./resimler/login2.png" id="loginImg">  
-        <form id="formLogin">
+        <form id="formLogin" action="loginPhp.php" method="POST">
            <table id="tableLogin">
-              <tr><td><input type="text" placeholder="Kullanıcı Adı" name="kullaniciAdi"></td></tr>
+              <tr><td><input type="email" placeholder="Kullanıcı Adı" name="kullaniciAdi" id="kullaniciAdi"></td></tr>
               <tr><td><input type="password" placeholder="Sifre" name="kullaniciSifre"></td></tr>
               <tr><td><input type="submit" id="submit" ></td></tr>
            </table>

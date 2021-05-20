@@ -1,36 +1,275 @@
-body{
-    background-color: white;
-    margin: 0;
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-nav{
-    background-color: black;
-    position: fixed;
+
+body{    
+    margin: 0;
+    background-color: lightblue;
+}
+ 
+.bilgiler{
+    background-color: white;
+}
+
+/*nav*/
+.navbar{
+    background: #ffffff;
     top: 0;
     width: 100%;
-       
+    opacity: 0.5 ;
+    overflow: hidden;   
+}
+.navbar .icon{
+   display: none;
 }
 nav>ul{
    
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    overflow: hidden;
+    padding: 0;   
     
 }
 nav>ul>li{
     display: inline;   
-    font-family: Arial, Helvetica, sans-serif;
     float: left;
+}
+
+#navLink a:hover{
+    background: #c4c4c4;
+    color: #3b3b3b;
+}
+
+#brandRenk{
+    color: #3d3d3d;
+}
+
+nav li>a{               
+    color: #3d3d3d;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+    padding-top: 20px;
+    padding-left:20px ;
+}
+
+/*index*/
+.bilgiler{
+    margin:10px 10% 10px 10%;
+    box-shadow: 0px 0px 5px 3px gray;
+    background-color: white;
+}
+
+
+#hakkımdaImg{
+    width: 100%;
+    border:  9px solid black;
+}
+
+#basketbol{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-bottom: 30px;
+   
+}
+
+#kitap{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-bottom: 30px;
+    border: 9px solid black;
     
 }
-li a:hover{
-    background-color: lightblue;
+
+/*özgeçmiş*/
+
+#cvSection{
+    margin: 10px 15% 10px 15%;
+    box-shadow:0px 0px 5px 3px gray ;
+}
+
+#cvImg{
+   width: 200px;
+   height: 250px;
+   margin:10px 5% 0px 15%
+   
+}
+
+#cvHakkında{
+    margin: 20px 5% 20px 5%;
+    background-color: cadetblue;   
     
 }
-li>a{
-display: block;    
-color: white;
-text-decoration: none;
-text-align: center;
-padding: 14px 16px;
+
+#cvSection>div{
+    float: left;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    margin: 10px;
 }
+
+.cvLbl{
+    margin-left: 20px;
+}
+
+/*sehrim*/
+
+.sehrimImg{
+    width: 100%;
+    padding-bottom: 5px;
+    border:  9px solid black;
+}
+
+p{
+    padding: 0px 20px 0px 20px;
+    font-size: medium;
+}
+
+#sehrimBilgi{
+    margin: 10px 15% 10px 15% ;
+    box-shadow: 0px 0px 5px 3px gray;
+}
+
+.sehrimImg{
+    width: 50%;
+    height: 10%;
+    margin-left: 25%;
+    margin-bottom: 30px; 
+}
+
+/*mirasımız*/
+
+#mirasimizBilgi{
+    margin: 10px 15% 10px 15%;
+    box-shadow:0px 0px 5px 3px gray ;
+}
+
+.mirasımızImg{
+    width: 50%;
+    height: 10%;
+    margin:10px 0px 30px 25%;
+    border: 9px solid black;
+}
+
+.mySlides {display:none;}
+
+.w3-display-left{
+    margin-left:20%; 
+    
+
+}
+.w3-display-right{
+    margin-right: 20%;
+   
+}
+
+#butonhover:hover{
+    background-color: transparent;
+}
+
+.sliderlink{
+    width: 50%;
+    height: 10%;
+    margin:10px 0px 30px 25%;
+}
+
+/*İlgi Alanlarım*/
+
+#ilgialanlarimBilgi{
+    margin: 10px 15% 10px 15% ;
+    box-shadow: 0px 0px 5px 3px gray;
+    background-color: white;
+}
+
+#KenarBilgi{
+    margin: 0 20px 0 20px;
+}
+
+/* iletisim */
+
+#iletisim{
+    margin: 5% 40% 5% 5%;
+    border:solid ;
+    border-radius: 20px;
+    background-color:white;
+}
+#formAcıklama{
+    margin-bottom: 10px;   
+    border-bottom: 5px solid blue;
+}
+
+#formAcıklama>p{
+    font-size: 30px;
+    margin-left: -20px;
+}
+
+td{
+     
+    padding-bottom: 25px;
+}
+
+input,textarea{
+    border-radius: 10px;
+}
+
+textarea{
+    width: 300px;
+}
+
+@media (max-width:600px){
+    textarea{
+        width: 240px;
+    }
+}
+
+#formIletisim{
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+#submit{  
+    background-color: green;
+    margin-right:10px ;
+}
+
+#reset{
+    background-color: red;
+}
+
+#iletiForm{
+    resize: none;
+}
+
+
+
+/*Login*/
+
+#login{
+    text-align: center;
+    margin: 15% 30% 25% 30%;
+    border-style: solid;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#loginImg{
+   padding-top: 5%;
+   padding-bottom: 5%;
+   width: 15%;
+   height: 20%;
+}
+
+#formLogin{
+    text-align: center;
+}
+
+#tableLogin{
+    margin: 10px 35% 10px 35%;
+}
+
+
