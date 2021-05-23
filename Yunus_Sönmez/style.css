@@ -1,16 +1,17 @@
 *{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
 }
 
 body{    
     margin: 0;
-    background-color: lightblue;
-}
- 
-.bilgiler{
-    background-color: white;
+    background-color: #6e6e6e;
 }
 
+p,h1,h2,h3,h4,h5,h6{
+    color: #6e6e6e;
+}
+ 
 /*nav*/
 .navbar{
     background: #ffffff;
@@ -60,12 +61,13 @@ h1,h2,h3,h4,h5,h6{
     margin:10px 10% 10px 10%;
     box-shadow: 0px 0px 5px 3px gray;
     background-color: white;
+    
 }
 
 
 #hakkımdaImg{
     width: 100%;
-    border:  9px solid black;
+    border:  4px solid rgb(24, 24, 24);
 }
 
 #basketbol{
@@ -81,7 +83,7 @@ h1,h2,h3,h4,h5,h6{
     height: 10%;
     margin-left: 25%;
     margin-bottom: 30px;
-    border: 9px solid black;
+    border: 4px solid rgb(24, 24, 24);
     
 }
 
@@ -100,11 +102,9 @@ h1,h2,h3,h4,h5,h6{
 }
 
 #cvHakkında{
-    margin: 20px 5% 20px 5%;
-    background-color: cadetblue;   
+    background-color: #c4c4c4;   
     
 }
-
 #cvSection>div{
     float: left;
     display: inline-block;
@@ -117,13 +117,9 @@ h1,h2,h3,h4,h5,h6{
     margin-left: 20px;
 }
 
+
 /*sehrim*/
 
-.sehrimImg{
-    width: 100%;
-    padding-bottom: 5px;
-    border:  9px solid black;
-}
 
 p{
     padding: 0px 20px 0px 20px;
@@ -138,8 +134,10 @@ p{
 .sehrimImg{
     width: 50%;
     height: 10%;
+    margin-top: 20px;
     margin-left: 25%;
     margin-bottom: 30px; 
+    border:  4px solid rgb(24, 24, 24);
 }
 
 /*mirasımız*/
@@ -153,29 +151,52 @@ p{
     width: 50%;
     height: 10%;
     margin:10px 0px 30px 25%;
-    border: 9px solid black;
+    border: 4px solid rgb(24, 24, 24);
 }
 
-.mySlides {display:none;}
+.mySlides {
+    display:none;
+    text-align: center;
+    width: 70%;
+    height: 10%;
+    margin-left: 15%;
+    margin-bottom: 30px; 
+    border:  4px solid rgb(24, 24, 24);
+
+}
 
 .w3-display-left{
-    margin-left:20%; 
+    margin-left:10%; 
     
 
 }
 .w3-display-right{
-    margin-right: 20%;
+    margin-right: 10%;
    
 }
 
-#butonhover:hover{
-    background-color: transparent;
-}
 
 .sliderlink{
     width: 50%;
     height: 10%;
     margin:10px 0px 30px 25%;
+}
+
+@media (max-width:1000px){
+    .w3-display-left{
+        margin-left: 8%;
+    }
+    .w3-display-right{
+        margin-right: 8%;
+    }
+}
+@media (max-width:600px){
+    .w3-display-left{
+        margin-left: 5%;
+    }
+    .w3-display-right{
+        margin-right: 5%;
+    }
 }
 
 /*İlgi Alanlarım*/
@@ -190,6 +211,10 @@ p{
     margin: 0 20px 0 20px;
 }
 
+#nbaApi>ul{
+    list-style-type: none;
+}
+
 /* iletisim */
 
 #iletisim{
@@ -200,7 +225,7 @@ p{
 }
 #formAcıklama{
     margin-bottom: 10px;   
-    border-bottom: 5px solid blue;
+    border-bottom: 4px dotted #6e6e6e;
 }
 
 #formAcıklama>p{
@@ -225,6 +250,13 @@ textarea{
     textarea{
         width: 240px;
     }
+    #sehirsec{
+        width: 240px;
+    }
+    select{
+        width: 100px;
+    }
+
 }
 
 #formIletisim{
@@ -233,12 +265,14 @@ textarea{
 }
 
 #submit{  
-    background-color: green;
+    background-color: grey;
     margin-right:10px ;
+    color:white;
 }
 
 #reset{
-    background-color: red;
+    background-color: grey;
+    color:white;
 }
 
 #iletiForm{
@@ -264,12 +298,10 @@ textarea{
    height: 20%;
 }
 
-#formLogin{
+.formLogin{
     text-align: center;
 }
 
-#tableLogin{
-    margin: 10px 35% 10px 35%;
+.loginInput{
+    margin: 10px 0 10px 0; 
 }
-
-

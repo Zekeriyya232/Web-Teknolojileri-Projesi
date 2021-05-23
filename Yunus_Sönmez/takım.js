@@ -7,7 +7,8 @@ let data = fetch("https://fly.sportsdata.io/v3/nba/scores/json/teams?key=b0595dc
     veri.forEach(element => {
         if(sira<30) {
             var isim = element["Name"]
-            takimlar.innerHTML += `<li>${isim}</li>`
+            var logo =element["WikipediaLogoUrl"]
+            takimlar.innerHTML += `<li><img src="${logo}" style= "width:50px ;margin: 10px"><b>${isim}</b></li>`
         }
         sira++
     });

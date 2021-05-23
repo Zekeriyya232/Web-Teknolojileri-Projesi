@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">    
 </head>
-<body>
+<body style="background-color: #44b6fe;">
     <div class="container-fluid" id="login">
         <img src="./resimler/login2.png" id="loginImg">  
-        <form id="formLogin" action="loginPhp.php" method="POST">
-           <table id="tableLogin">
-              <tr><td><input type="email" placeholder="Kullanıcı Adı" name="kullaniciAdi" id="kullaniciAdi"></td></tr>
-              <tr><td><input type="password" placeholder="Sifre" name="kullaniciSifre"></td></tr>
-              <tr><td><input type="submit" id="submit" ></td></tr>
+        <form class="formLogin" action="loginPhp.php" method="POST">        
+              <input type="email" placeholder="Kullanıcı Adı" required name="kullaniciAdi" id="kullaniciAdi" class="loginInput"><br>
+              <input type="password" placeholder="Sifre" required name="kullaniciSifre" class="loginInput"><br>
+              <input type="submit" id="submit" class="loginInput" >
            </table>
        </form>
     </div>

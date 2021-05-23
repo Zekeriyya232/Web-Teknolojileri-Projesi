@@ -6,6 +6,7 @@
     <title>Yunus Sönmez</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="JsForm.js"></script>
 </head>
 <body>
   <nav class="navbar" navbar-inverse>    
@@ -21,29 +22,29 @@
         <li ><a href="IlgiAlanlarim.html"><b>İlgi Alanlarım</b></a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right" id="navLink">
-        <li><a href="Iletisim.html" ><b>İletişim</b></a></li>
+        <li><a href="Iletisim.html" style="background: #c4c4c4; color: #3b3b3b;" ><b>İletişim</b></a></li>
         <li ><a href="Login.html"  ><span class="glyphicon glyphicon-log-in"></span><b> LOGIN</b></a></li>            
       </ul>
     </div>
  </nav>
  <section class="container-fluid" id="iletisim">
   <div id="formAcıklama">
-    <p>
+    <p style="margin-top: 10px; color:#4b4b4b;">
       Benimle İletişime Geçin
     </p>
   </div>
   
-  <form name="iletisim" action="#" method="GET" id="formIletisim">   
+  <form name="iletisim" action="PhpForm.php" onsubmit="return formKontrol(this)" method="POST" id="formIletisim">   
       <table>                 
          <tr><td> <input type="text" name="isim" autofocus required placeholder="İsim"></td></tr>         
          <tr></td><td ><input type="text" name="soyisim" id="soyisim" required placeholder="Soyisim" ></td></tr>        
          <tr></td><td ><input type="email" name="email"  autocomplete="email" required placeholder="Email"></td></tr>       
          <tr><td ><input type="tel" name="telefon"  autocomplete="tel" required placeholder="Tel"></td></tr> 
          <tr><td><span style="background-color: white; border: 2px solid grey; border-radius: 10px; padding:3px 5px 3px 0px;">
-          <label style="color: grey;">Cinsiyetiniz :</label><input type="radio" name="cinsiyet" style="margin-left: 10px;">Erkek<input type="radio" name="cinsiyet" style="margin-left: 10px;" >Kadın</span></td></tr>
-         <tr><td><span style="background-color: white; border: 2px solid grey; border-radius: 10px; padding:3px 5px 3px 0px;">
+          <label style="color: grey;">Cinsiyetiniz :</label><input type="radio" name="cinsiyet" value="erkek" style="margin-left: 10px;">Erkek<input type="radio" name="cinsiyet" value="kadın" style="margin-left: 10px;" >Kadın</span></td></tr>
+         <tr><td><span id="sehirsec" style="background-color: white; border: 2px solid grey; border-radius: 10px; padding:3px 5px 3px 0px;">
           <label style="color: grey;">Yaşadığınız Şehir :</label>
-          <select name="iller" style="border: none;">      
+          <select name="iller" style="border: none; ">      
             <option value="34" selected>İstanbul</option>
             <option value="6">Ankara</option>
             <option value="35">İzmir</option>
