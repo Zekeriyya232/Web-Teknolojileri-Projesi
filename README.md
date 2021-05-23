@@ -1,4 +1,4 @@
-# Web-Teknolojileri-Projesi
+# Web-Teknolojileri-Projesi / http://zyunussonmez.epizy.com/index.html
 
 ##Ana Menü
 Web sitemin tüm sayfaları için ortak  Navbar bölümünde :  Hakkımda , Özgeçmişim,  Şehrim , Mirasımız, İlgi Alanlarım , Login ve İletişim şeklinde menüler ve  bu bölümler hakkında sayfalar oluşturdum.
