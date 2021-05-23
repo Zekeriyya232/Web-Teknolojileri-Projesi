@@ -211,8 +211,22 @@ p{
     margin: 0 20px 0 20px;
 }
 
-#nbaApi>ul{
-    list-style-type: none;
+
+.ilgiImg{
+    width: 50%;
+    height: 10%;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 30px; 
+    border:  4px solid rgb(24, 24, 24);
+    float: left;
+}
+
+#nbaResim1{
+    background-color: white;
+    float: left;
+    width: 100%;
 }
 
 /* iletisim */
